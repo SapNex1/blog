@@ -1,77 +1,54 @@
 ---
-title: Display Jupyter Notebooks with Academic
-subtitle: Learn how to blog in Academic using Jupyter notebooks
-summary: Learn how to blog in Academic using Jupyter notebooks
+title: Git. Управление версиями.
+subtitle: Обзор основных команд.
+summary: Обзор команд Git.
 authors:
-  - admin
+  - Baklashov A
 tags: []
 categories: []
 projects: []
-date: '2019-02-05T00:00:00Z'
-lastMod: '2019-09-05T00:00:00Z'
+date: '2023-09-29T00:00:00Z'
+lastMod: '2023-09-29T00:00:00Z'
 image:
-  caption: ''
+  caption: 'Image credit: [**Unsplash**](https://vuzopedia.ru/storage/app/uploads/public/62d/6fe/98d/62d6fe98dc607435313982.jpg)'
   focal_point: ''
+  placement: 2
+  preview_only: false
+
+authors:
+  - Baklashov A.
+
+tags:
+  - Academic
+
+categories:
+  - Demo
 ---
 
-```python
-from IPython.core.display import Image
-Image('https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png')
-```
+## Overview
 
-![png](./index_1_0.png)
+Команды для ввода в терминал.
 
-```python
-print("Welcome to Academic!")
-```
+[![The template is mobile first with a responsive design to ensure that your site looks stunning on every device.](https://raw.githubusercontent.com/wowchemy/wowchemy-hugo-modules/main/starters/academic/preview.png)](https://wowchemy.com)
 
-    Welcome to Academic!
+## Управление версиями с Git
 
-## Install Python and JupyterLab
+Git - это мощный инструмент для управления версиями кода. Вот несколько основных команд Git:
 
-[Install Anaconda](https://www.anaconda.com/distribution/#download-section) which includes Python 3 and JupyterLab.
+1. `git init`: Инициализация Git-репозитория в текущей папке.
 
-Alternatively, install JupyterLab with `pip3 install jupyterlab`.
+2. `git clone [URL]`: Клонирование удаленного репозитория на ваш компьютер.
 
-## Create or upload a Jupyter notebook
+3. `git add [файл]`: Добавление файла в индекс для отслеживания изменений.
 
-Run the following commands in your Terminal, substituting `<MY-WEBSITE-FOLDER>` and `<SHORT-POST-TITLE>` with the file path to your Academic website folder and a short title for your blog post (use hyphens instead of spaces), respectively:
+4. `git commit -m "Ваш комментарий"`: Создание коммита с описанием ваших изменений.
 
-```bash
-mkdir -p <MY-WEBSITE-FOLDER>/content/post/<SHORT-POST-TITLE>/
-cd <MY-WEBSITE-FOLDER>/content/post/<SHORT-POST-TITLE>/
-jupyter lab index.ipynb
-```
+5. `git pull`: Получение последних изменений из удаленного репозитория.
 
-The `jupyter` command above will launch the JupyterLab editor, allowing us to add Academic metadata and write the content.
+6. `git push`: Отправка ваших коммитов на удаленный репозиторий.
 
-## Edit your post metadata
+7. `git branch`: Просмотр списка веток в вашем репозитории.
 
-The first cell of your Jupter notebook will contain your post metadata ([front matter](https://sourcethemes.com/academic/docs/front-matter/)).
+8. `git merge [ветка]`: Объединение изменений из одной ветки в другую.
 
-In Jupter, choose _Markdown_ as the type of the first cell and wrap your Academic metadata in three dashes, indicating that it is YAML front matter:
-
-```
----
-title: My post's title
-date: 2019-09-01
-
-# Put any other Academic metadata here...
----
-```
-
-Edit the metadata of your post, using the [documentation](https://sourcethemes.com/academic/docs/managing-content) as a guide to the available options.
-
-To set a [featured image](https://sourcethemes.com/academic/docs/managing-content/#featured-image), place an image named `featured` into your post's folder.
-
-For other tips, such as using math, see the guide on [writing content with Academic](https://wowchemy.com/docs/content/writing-markdown-latex/).
-
-## Convert notebook to Markdown
-
-```bash
-jupyter nbconvert index.ipynb --to markdown --NbConvertApp.output_files_dir=.
-```
-
-## Example
-
-This post was created with Jupyter. The orginal files can be found at https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter
+Git помогает разработчикам эффективно сотрудничать, отслеживать изменения и восстанавливаться в случае ошибок. Не забывайте регулярно сохранять свои изменения с помощью коммитов!

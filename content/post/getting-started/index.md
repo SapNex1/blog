@@ -10,7 +10,7 @@ projects: []
 date: '2023-09-29T00:00:00Z'
 lastMod: '2023-09-29T00:00:00Z'
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/CpkOjOcXdUY)'
+  caption: 'Image credit: [**Unsplash**](https://vuzopedia.ru/storage/app/uploads/public/62d/6fe/98d/62d6fe98dc607435313982.jpg)'
   focal_point: ''
   placement: 2
   preview_only: false
